@@ -8,9 +8,7 @@ palabra = ""
 
 
 
-'''
-Con este For recorremos la palabra e introducimos cada letra en una lista
-'''
+
 for letra in palabra_usuario:
 
     if letra.isupper() == True: #validamos si la letra que recorre el for es mayúscula
