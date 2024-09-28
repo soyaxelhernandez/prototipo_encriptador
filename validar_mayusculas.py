@@ -15,7 +15,7 @@ for letra in palabra_usuario:
 
     if letra.isupper() == True: #validamos si la letra que recorre el for es mayúscula
 
-        mi_lista.clear() #si alguaa es mayuscula limpiamos la lista
+        mi_lista.clear() #si alguna es mayuscula limpiamos la lista
         print(f"No se aceptan mayusculas: {palabra_usuario}")
         break
 
