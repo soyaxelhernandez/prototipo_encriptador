@@ -15,7 +15,7 @@ for letra in palabra_usuario:
 
     if letra.isupper() == True: #validamos si la letra que recorre el for es mayúscula
 
-        mi_lista.clear() #si alguma es mayuscula limpiamos la lista
+        mi_lista.clear() #si alguaa es mayuscula limpiamos la lista
         print(f"No se aceptan mayusculas: {palabra_usuario}")
         break
 
@@ -33,6 +33,6 @@ for palabra_secreta in mi_lista:
 
 vacia = len(mi_lista) == 0 #con len validamos la longitud de la lista para saber si contiene letras
 
-if vacia == False: #validamos si existe un mensaje que imprimir de lo contrario no para al print
+if vacia == False: #validamos si existe un mensaje que imprimir de lo contrario no pasa al print
     
     print(f"La palabra encriptada es: {palabra}")
