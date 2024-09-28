@@ -1,5 +1,5 @@
 '''
-Prototipo para validar caracteres especiales y acentos
+Prototipo de encriptador con una validacion de no acentos y caracteres especiales
 '''
 
 # import string para poder usar ascii_letters
@@ -28,6 +28,33 @@ for letra in palabra_usuario:
     elif letra.isupper() == False: #de lo contrario se valida que no se tiene alguna mayúscula
         mi_lista.append(letra) # append agrega un elemento al final de la lista
 
+'''
+Con este For verifico en que índice esta la letra y después evaluó para reemplazar en ese elemento
+'''
+for letras in mi_lista:
+    
+    elemento = letras
+    indice = mi_lista.index(elemento) #index() indica el índice de la primera aparición de un elemento
+
+    if letras == "a":
+        mi_lista.remove("a")
+        mi_lista.insert(indice, "ai")
+        
+    elif letras == "e":
+        mi_lista.remove("e")
+        mi_lista.insert(indice, "enter")
+
+    elif letras == "i":
+        mi_lista.remove("i")
+        mi_lista.insert(indice, "imes")
+
+    elif letras == "o":
+        mi_lista.remove("o")
+        mi_lista.insert(indice, "ober")
+
+    elif letras == "u":
+        mi_lista.remove("u")
+        mi_lista.insert(indice, "ufat")
 
 '''
 Con este For tomo cada palabra de la lista y la uno para hacerla una sola palabra
@@ -39,4 +66,3 @@ lista_vacia = len(mi_lista) == 0 #con len validamos la longitud de la lista para
 
 if lista_vacia == False: #validamos si existe un mensaje que imprimir de lo contrario no pasa al print
     print(f"La palabra encriptada es: {palabra}")
-
